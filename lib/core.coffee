@@ -12,6 +12,7 @@ module.exports =
     'text.html.textile'
     'text.plain'
     'text.plain.null-grammar'
+    'source.review'
     'plain'
   ]
 
@@ -21,6 +22,7 @@ module.exports =
       when 'text.html.textile' then "wiki"
       when 'source.asciidoc' then "asciidoc"
       when 'text.tex.latex' then "latex"
+      when 'source.review' then "review"
       else "plain"
 
   convertToErrors: (JSONString) ->
